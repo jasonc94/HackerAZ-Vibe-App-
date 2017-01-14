@@ -114,7 +114,7 @@
                                 <rect key="frame" x="143" y="126" width="88" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Search"/>
                             </button>
                             <searchBar contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BO7-zf-tRU">
                                 <rect key="frame" x="0.0" y="64" width="375" height="44"/>
@@ -125,10 +125,14 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="0iw-PP-bFf"/>
+                    <connections>
+                        <outlet property="searchBar" destination="BO7-zf-tRU" id="OVf-je-cAZ"/>
+                        <outlet property="searchButton" destination="BTW-5q-R0K" id="zCI-TT-o1V"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G7X-q3-IRj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2404" y="124.58770614692655"/>
+            <point key="canvasLocation" x="2286" y="143"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="6Yj-YP-ruN">
