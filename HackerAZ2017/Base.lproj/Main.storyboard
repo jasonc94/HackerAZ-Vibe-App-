@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="lbr-qR-WmN">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C68" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="lbr-qR-WmN">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -71,14 +71,6 @@
                                     <tabBarItem systemItem="recents" id="cr4-2o-pSZ"/>
                                 </items>
                             </tabBar>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OkT-ba-jsq">
-                                <rect key="frame" x="0.0" y="64" width="95" height="71"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Photo"/>
-                                <connections>
-                                    <segue destination="Jah-3M-FFT" kind="push" id="VFK-rp-7O6"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dq6-Pl-1fI">
                                 <rect key="frame" x="259" y="569" width="77" height="53"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -88,6 +80,14 @@
                                 </state>
                                 <connections>
                                     <segue destination="ULc-c3-1Lb" kind="show" id="wPw-Yq-j5C"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9N1-tA-DQG">
+                                <rect key="frame" x="0.0" y="64" width="95" height="95"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Photo"/>
+                                <connections>
+                                    <segue destination="Jah-3M-FFT" kind="push" id="APR-4S-JEi"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -151,9 +151,6 @@
                                     <segment title="Dropped"/>
                                     <segment title="Upvoted"/>
                                 </segments>
-                                <connections>
-                                    <action selector="segmentIndexChange:" destination="Jah-3M-FFT" eventType="valueChanged" id="mju-mG-N6h"/>
-                                </connections>
                             </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -161,12 +158,11 @@
                     <navigationItem key="navigationItem" title="Profile Page" id="W8Q-K3-uTY"/>
                     <connections>
                         <outlet property="profileImage" destination="Pov-tO-ubn" id="YjH-wN-ceY"/>
-                        <outlet property="segment" destination="Qkr-vO-0Lr" id="S45-0J-Pyg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tsD-bT-6we" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1552.8" y="838.83058470764627"/>
+            <point key="canvasLocation" x="1553" y="951"/>
         </scene>
         <!--Libary View-->
         <scene sceneID="8zC-23-nk3">
@@ -202,7 +198,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G7X-q3-IRj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2285.5999999999999" y="142.57871064467767"/>
+            <point key="canvasLocation" x="2294" y="125"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="6Yj-YP-ruN">
