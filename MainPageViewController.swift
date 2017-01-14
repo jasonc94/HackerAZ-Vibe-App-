@@ -9,7 +9,12 @@
 import UIKit
 
 class MainPageViewController: UIViewController {
-
+    
+    @IBOutlet weak var profileImage: UIImageView!
+    @IBOutlet weak var tabBar: UITabBar!
+    @IBOutlet weak var dropButton: UIButton!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
