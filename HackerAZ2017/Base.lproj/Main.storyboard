@@ -151,6 +151,9 @@
                                     <segment title="Dropped"/>
                                     <segment title="Upvoted"/>
                                 </segments>
+                                <connections>
+                                    <action selector="segmentIndexChange:" destination="Jah-3M-FFT" eventType="valueChanged" id="mju-mG-N6h"/>
+                                </connections>
                             </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -158,6 +161,7 @@
                     <navigationItem key="navigationItem" title="Profile Page" id="W8Q-K3-uTY"/>
                     <connections>
                         <outlet property="profileImage" destination="Pov-tO-ubn" id="YjH-wN-ceY"/>
+                        <outlet property="segment" destination="Qkr-vO-0Lr" id="S45-0J-Pyg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tsD-bT-6we" userLabel="First Responder" sceneMemberID="firstResponder"/>
