@@ -10,14 +10,13 @@ import UIKit
 
 class MainPageViewController: UIViewController {
     
-    @IBOutlet weak var profileImage: UIImageView!
+    
     @IBOutlet weak var tabBar: UITabBar!
     @IBOutlet weak var dropButton: UIButton!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
     }
 
@@ -25,8 +24,8 @@ class MainPageViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+  
     
-
     /*
     // MARK: - Navigation
 
