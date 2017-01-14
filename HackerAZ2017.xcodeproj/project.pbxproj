@@ -14,6 +14,7 @@
 		92D51FB71E2A2C8C00B5D3C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92D51FB61E2A2C8C00B5D3C6 /* Assets.xcassets */; };
 		92D51FBA1E2A2C8C00B5D3C6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92D51FB81E2A2C8C00B5D3C6 /* LaunchScreen.storyboard */; };
 		92D51FC51E2A30B900B5D3C6 /* LibaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D51FC41E2A30B900B5D3C6 /* LibaryView.swift */; };
+		BE6D00F41E2A457F00395759 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6D00F31E2A457F00395759 /* ProfileViewController.swift */; };
 		BE8BF7FF1E2A2E3200BFF6BC /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8BF7FE1E2A2E3200BFF6BC /* MainPageViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +28,7 @@
 		92D51FB91E2A2C8C00B5D3C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		92D51FBB1E2A2C8C00B5D3C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		92D51FC41E2A30B900B5D3C6 /* LibaryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LibaryView.swift; sourceTree = "<group>"; };
+		BE6D00F31E2A457F00395759 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		BE8BF7FE1E2A2E3200BFF6BC /* MainPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainPageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -77,6 +79,7 @@
 				92D51FAE1E2A2C8C00B5D3C6 /* ViewController.swift */,
 				BE8BF7FE1E2A2E3200BFF6BC /* MainPageViewController.swift */,
 				92D51FC41E2A30B900B5D3C6 /* LibaryView.swift */,
+				BE6D00F31E2A457F00395759 /* ProfileViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -153,6 +156,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE6D00F41E2A457F00395759 /* ProfileViewController.swift in Sources */,
 				BE8BF7FF1E2A2E3200BFF6BC /* MainPageViewController.swift in Sources */,
 				92D51FC51E2A30B900B5D3C6 /* LibaryView.swift in Sources */,
 				92D51FB51E2A2C8C00B5D3C6 /* HackerAZ2017.xcdatamodeld in Sources */,
