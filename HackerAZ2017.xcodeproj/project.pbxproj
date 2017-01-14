@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9201F7781E2AA70800143F75 /* musicLibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9201F7771E2AA70800143F75 /* musicLibraryView.swift */; };
 		92D51FAD1E2A2C8C00B5D3C6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D51FAC1E2A2C8C00B5D3C6 /* AppDelegate.swift */; };
 		92D51FAF1E2A2C8C00B5D3C6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D51FAE1E2A2C8C00B5D3C6 /* ViewController.swift */; };
 		92D51FB21E2A2C8C00B5D3C6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92D51FB01E2A2C8C00B5D3C6 /* Main.storyboard */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9201F7771E2AA70800143F75 /* musicLibraryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = musicLibraryView.swift; sourceTree = "<group>"; };
 		92D51FA91E2A2C8C00B5D3C6 /* HackerAZ2017.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HackerAZ2017.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92D51FAC1E2A2C8C00B5D3C6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		92D51FAE1E2A2C8C00B5D3C6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = HackerAZ2017/ViewController.swift; sourceTree = "<group>"; };
@@ -77,6 +79,7 @@
 				92D51FAE1E2A2C8C00B5D3C6 /* ViewController.swift */,
 				BE8BF7FE1E2A2E3200BFF6BC /* MainPageViewController.swift */,
 				BE6D00F31E2A457F00395759 /* ProfileViewController.swift */,
+				9201F7771E2AA70800143F75 /* musicLibraryView.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -153,6 +156,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9201F7781E2AA70800143F75 /* musicLibraryView.swift in Sources */,
 				BE6D00F41E2A457F00395759 /* ProfileViewController.swift in Sources */,
 				BE8BF7FF1E2A2E3200BFF6BC /* MainPageViewController.swift in Sources */,
 				92D51FB51E2A2C8C00B5D3C6 /* HackerAZ2017.xcdatamodeld in Sources */,
