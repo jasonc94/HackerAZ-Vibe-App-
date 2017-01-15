@@ -12,11 +12,11 @@ class musicLibraryView: UIViewController {
     
     @IBOutlet weak var musicLibrary: UITableView!
     
-    var musicList = [String]()
+    var musicData : musicList = musicList()
+ 
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        musicList.append("hello")
 
         // Do any additional setup after loading the view.
     }
@@ -29,7 +29,7 @@ class musicLibraryView: UIViewController {
 
     // This is a data source method that will be called when table is loaded
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return musicList.count
+        return musicData.dropLibrary.count
     }
     
     // This datasource method will create each cell of the table
@@ -37,7 +37,7 @@ class musicLibraryView: UIViewController {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "musicCell", for: indexPath)
         
-        cell.textLabel?.text = musicList[indexPath.row]
+        cell.textLabel?.text = musicData.dropLibrary[indexPath.row]["artist-song"]!
         //let cell_Image = UIImage(named: "tom.jpg")
         //cell.imageView?.image = cell_Image
         
