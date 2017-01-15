@@ -24,6 +24,7 @@ class MainPageViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
        
+        
         // Do any additional setup after loading the view.
         let lo: CLLocationDegrees = -118.4913
         let lati: CLLocationDegrees = 34.0082

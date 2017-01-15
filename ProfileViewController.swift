@@ -13,11 +13,14 @@ class ProfileViewController: UIViewController, UITableViewDataSource, UITableVie
     @IBOutlet weak var profileImage: UIImageView!
 
     @IBOutlet weak var tableView: UITableView!
-    
+    var musics: musicList = musicList()
     
     
     override func viewDidLoad() {
+
         super.viewDidLoad()
+        
+        profileImage.image  = UIImage(named:"profilePic.jpg")
         tableView.dataSource = self
         tableView.delegate = self
         tableView.reloadData()
@@ -37,12 +40,14 @@ class ProfileViewController: UIViewController, UITableViewDataSource, UITableVie
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
-        print("entered")
         let cell = tableView.dequeueReusableCell(withIdentifier: "profileMusicCell", for: indexPath) as! profileMusicCell
         print("entered")
-        cell.song.text = "Manganas Garden - Day by Day"
-        cell.location.text = "Location - Santa Monica Pier"
         
+        cell.song.text = musics.dropLibrary[indexPath.row]["artist-song"]!
+        cell.location.text = musics.dropLibrary[indexPath.row]["location"]!
+        cell.upvotes.text = musics.dropLibrary[indexPath.row]["upvotes"]!
+        let cell_Image = UIImage(named: musics.dropLibrary[indexPath.row]["coverImage"]!)
+        cell.imageView?.image = cell_Image
         return cell
     }
     
