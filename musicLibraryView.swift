@@ -44,6 +44,16 @@ class musicLibraryView: UIViewController {
         return cell;
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let selectedIndex: IndexPath = self.musicLibrary.indexPath(for: sender as! UITableViewCell)!
+        if(segue.identifier == "toMap"){
+            if let details : MainPageViewController = segue.destination as? MainPageViewController {
+                details.droppedSong = musicData.dropLibrary[selectedIndex.row]["artist-song"]!
+            }
+        }
+    }
+
+    
  
 
 

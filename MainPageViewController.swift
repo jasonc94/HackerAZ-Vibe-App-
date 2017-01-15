@@ -17,8 +17,7 @@ class MainPageViewController: UIViewController {
     @IBOutlet weak var map: MKMapView!
     @IBOutlet weak var controller: UISegmentedControl!
  
-    //var longit : Double?
-    //var latit: Double?
+    var droppedSong:String?
 
     
     override func viewDidLoad() {
@@ -59,14 +58,17 @@ class MainPageViewController: UIViewController {
     }
  
     @IBAction func dropPin(_ sender: UILongPressGestureRecognizer) {
-        let location =  sender.location(in: self.map)
-        let locCord = self.map.convert(location,toCoordinateFrom: self.map)
-        let annotation = MKPointAnnotation()
-        annotation.coordinate = locCord
-        annotation.title = "place"
-        annotation.subtitle = "Location of place"
-        //self.map.removeAnnotation(map.annotations as! MKAnnotation)
-        self.map.addAnnotation(annotation)
+        if(droppedSong != nil){
+            let location =  sender.location(in: self.map)
+            let locCord = self.map.convert(location,toCoordinateFrom: self.map)
+            let annotation = MKPointAnnotation()
+            annotation.coordinate = locCord
+            annotation.title = "Place"
+            annotation.subtitle = droppedSong!
+            //self.map.removeAnnotation(map.annotations as! MKAnnotation)
+            self.map.addAnnotation(annotation)
+            droppedSong = nil
+        }
     }
     
 
