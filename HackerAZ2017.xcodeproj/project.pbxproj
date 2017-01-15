@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		9201F7781E2AA70800143F75 /* musicLibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9201F7771E2AA70800143F75 /* musicLibraryView.swift */; };
 		92AE567D1E2AF8C200B8EDEB /* musicController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AE567C1E2AF8C200B8EDEB /* musicController.swift */; };
+		92C47FD11E2B42BE0088D700 /* RecentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C47FD01E2B42BE0088D700 /* RecentViewController.swift */; };
+		92C47FD31E2B43330088D700 /* RecentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C47FD21E2B43330088D700 /* RecentCell.swift */; };
 		92D51FAD1E2A2C8C00B5D3C6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D51FAC1E2A2C8C00B5D3C6 /* AppDelegate.swift */; };
 		92D51FAF1E2A2C8C00B5D3C6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D51FAE1E2A2C8C00B5D3C6 /* ViewController.swift */; };
 		92D51FB21E2A2C8C00B5D3C6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92D51FB01E2A2C8C00B5D3C6 /* Main.storyboard */; };
@@ -47,6 +49,8 @@
 /* Begin PBXFileReference section */
 		9201F7771E2AA70800143F75 /* musicLibraryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = musicLibraryView.swift; sourceTree = "<group>"; };
 		92AE567C1E2AF8C200B8EDEB /* musicController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = musicController.swift; sourceTree = "<group>"; };
+		92C47FD01E2B42BE0088D700 /* RecentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecentViewController.swift; sourceTree = "<group>"; };
+		92C47FD21E2B43330088D700 /* RecentCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecentCell.swift; sourceTree = "<group>"; };
 		92D51FA91E2A2C8C00B5D3C6 /* HackerAZ2017.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HackerAZ2017.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92D51FAC1E2A2C8C00B5D3C6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		92D51FAE1E2A2C8C00B5D3C6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = HackerAZ2017/ViewController.swift; sourceTree = "<group>"; };
@@ -136,6 +140,7 @@
 				9201F7771E2AA70800143F75 /* musicLibraryView.swift */,
 				92AE567C1E2AF8C200B8EDEB /* musicController.swift */,
 				C8AFA15C1E2AFA2D0039BD18 /* PopularViewController.swift */,
+				92C47FD01E2B42BE0088D700 /* RecentViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -145,6 +150,7 @@
 			children = (
 				BE2508411E2AC35D0016EB3D /* profileMusicCell.swift */,
 				C8AFA1601E2AFBC00039BD18 /* PopularCell.swift */,
+				92C47FD21E2B43330088D700 /* RecentCell.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -296,7 +302,9 @@
 				BE8BF7FF1E2A2E3200BFF6BC /* MainPageViewController.swift in Sources */,
 				92D51FB51E2A2C8C00B5D3C6 /* HackerAZ2017.xcdatamodeld in Sources */,
 				92D51FAF1E2A2C8C00B5D3C6 /* ViewController.swift in Sources */,
+				92C47FD11E2B42BE0088D700 /* RecentViewController.swift in Sources */,
 				92D51FAD1E2A2C8C00B5D3C6 /* AppDelegate.swift in Sources */,
+				92C47FD31E2B43330088D700 /* RecentCell.swift in Sources */,
 				C8974C8B1E2AD38F00D6089C /* musicList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
