@@ -11,6 +11,7 @@ import UIKit
 class ViewController: UIViewController {
     @IBOutlet weak var logo: UIImageView!
     @IBOutlet weak var gif: UIImageView!
+  
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,7 +43,7 @@ class ViewController: UIViewController {
             UIImage(named: "frame_23_delay-s.jpg")!,
             
         ]
-        gif.animationDuration = 3;
+        gif.animationDuration = 1;
         gif.startAnimating()
     }
 
