@@ -50,12 +50,10 @@ class RecentViewController: UIViewController, UITableViewDataSource, UITableView
         let selectedIndex: IndexPath = self.tableView.indexPath(for: (sender as? UITableViewCell)!)!
         if(segue.identifier == "toMusic"){
             if let details : musicController = segue.destination as? musicController {
-                //set the music name
-                details.mTitle = musics.recentLibrary[selectedIndex.row]["artist-song"]!
-                //set the selected place image
-                details.mImg = musics.recentLibrary[selectedIndex.row]["coverImage"]!
-                details.mVotes = musics.recentLibrary[selectedIndex.row]["upvotes"]!
-            }
+                //pass the index to next view
+                details.index = selectedIndex.row
+                //pass an array of dictionary to next view
+                details.list = musics.recentLibrary           }
         }
     }
     

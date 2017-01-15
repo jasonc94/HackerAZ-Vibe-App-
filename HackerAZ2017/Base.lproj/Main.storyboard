@@ -309,6 +309,9 @@
                                 <rect key="frame" x="172" y="477" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="play"/>
+                                <connections>
+                                    <action selector="playMusic:" destination="unI-Ie-WNy" eventType="touchUpInside" id="pg5-Dj-8zQ"/>
+                                </connections>
                             </button>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fkD-no-gd8">
                                 <rect key="frame" x="20" y="524" width="51" height="31"/>
@@ -318,11 +321,17 @@
                                 <rect key="frame" x="24" y="610" width="59" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="previous"/>
+                                <connections>
+                                    <action selector="previousSong:" destination="unI-Ie-WNy" eventType="touchUpInside" id="QEw-oY-6aa"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fzs-mQ-alH">
                                 <rect key="frame" x="166" y="610" width="42" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="pause"/>
+                                <connections>
+                                    <action selector="pause:" destination="unI-Ie-WNy" eventType="touchUpInside" id="iba-JS-soB"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Votes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KjJ-IW-BMs">
                                 <rect key="frame" x="250" y="482" width="109" height="21"/>
@@ -342,6 +351,9 @@
                                 <rect key="frame" x="286" y="610" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="next"/>
+                                <connections>
+                                    <action selector="nextSong:" destination="unI-Ie-WNy" eventType="touchUpInside" id="1Od-qI-xa1"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
