@@ -33,6 +33,9 @@
 		BE2508421E2AC35D0016EB3D /* profileMusicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2508411E2AC35D0016EB3D /* profileMusicCell.swift */; };
 		BE6885841E2B5C5700BF37DD /* profilePic.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BE6885831E2B5C5700BF37DD /* profilePic.jpg */; };
 		BE6885861E2B658C00BF37DD /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = BE6885851E2B658C00BF37DD /* logo.png */; };
+		BE68858A1E2B737E00BF37DD /* dropButton.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BE6885891E2B737E00BF37DD /* dropButton.jpg */; };
+		BE68858C1E2B75B200BF37DD /* popularIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = BE68858B1E2B75B200BF37DD /* popularIcon.png */; };
+		BE6885901E2B771800BF37DD /* RecentIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = BE68858F1E2B771800BF37DD /* RecentIcon.png */; };
 		BE6D00F41E2A457F00395759 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6D00F31E2A457F00395759 /* ProfileViewController.swift */; };
 		BE8BF7FF1E2A2E3200BFF6BC /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8BF7FE1E2A2E3200BFF6BC /* MainPageViewController.swift */; };
 		C8974C8B1E2AD38F00D6089C /* musicList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8974C8A1E2AD38F00D6089C /* musicList.swift */; };
@@ -78,6 +81,9 @@
 		BE2508411E2AC35D0016EB3D /* profileMusicCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = profileMusicCell.swift; sourceTree = "<group>"; };
 		BE6885831E2B5C5700BF37DD /* profilePic.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = profilePic.jpg; sourceTree = "<group>"; };
 		BE6885851E2B658C00BF37DD /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo.png; path = ../../Downloads/logo.png; sourceTree = "<group>"; };
+		BE6885891E2B737E00BF37DD /* dropButton.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = dropButton.jpg; path = ../../Downloads/dropButton.jpg; sourceTree = "<group>"; };
+		BE68858B1E2B75B200BF37DD /* popularIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = popularIcon.png; path = ../../Downloads/popularIcon.png; sourceTree = "<group>"; };
+		BE68858F1E2B771800BF37DD /* RecentIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = RecentIcon.png; path = ../../Downloads/RecentIcon.png; sourceTree = "<group>"; };
 		BE6D00F31E2A457F00395759 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		BE8BF7FE1E2A2E3200BFF6BC /* MainPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainPageViewController.swift; sourceTree = "<group>"; };
 		C8974C8A1E2AD38F00D6089C /* musicList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = musicList.swift; sourceTree = "<group>"; };
@@ -149,6 +155,9 @@
 				92C47FD01E2B42BE0088D700 /* RecentViewController.swift */,
 				BE6885851E2B658C00BF37DD /* logo.png */,
 				BE6885831E2B5C5700BF37DD /* profilePic.jpg */,
+				BE6885891E2B737E00BF37DD /* dropButton.jpg */,
+				BE68858B1E2B75B200BF37DD /* popularIcon.png */,
+				BE68858F1E2B771800BF37DD /* RecentIcon.png */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -273,6 +282,7 @@
 				BE6885861E2B658C00BF37DD /* logo.png in Resources */,
 				92C47FE31E2B48C70088D700 /* 6.jpg in Resources */,
 				92C47FE01E2B48C70088D700 /* 3.jpg in Resources */,
+				BE6885901E2B771800BF37DD /* RecentIcon.png in Resources */,
 				C8974CBA1E2AEC5000D6089C /* 8.mp3 in Resources */,
 				C8974CB81E2AEC4B00D6089C /* 7.mp3 in Resources */,
 				C8974CB21E2AEC3C00D6089C /* 4.mp3 in Resources */,
@@ -285,6 +295,7 @@
 				92C47FEB1E2B490D0088D700 /* 9.mp3 in Resources */,
 				92D51FBA1E2A2C8C00B5D3C6 /* LaunchScreen.storyboard in Resources */,
 				92C47FDF1E2B48C70088D700 /* 10.jpg in Resources */,
+				BE68858A1E2B737E00BF37DD /* dropButton.jpg in Resources */,
 				BE6885841E2B5C5700BF37DD /* profilePic.jpg in Resources */,
 				92C47FE81E2B48C70088D700 /* 1.jpg in Resources */,
 				92C47FE21E2B48C70088D700 /* 7.jpg in Resources */,
@@ -293,6 +304,7 @@
 				92C47FE41E2B48C70088D700 /* 5.jpg in Resources */,
 				92C47FE11E2B48C70088D700 /* 8.jpg in Resources */,
 				92D51FB71E2A2C8C00B5D3C6 /* Assets.xcassets in Resources */,
+				BE68858C1E2B75B200BF37DD /* popularIcon.png in Resources */,
 				C8974CB41E2AEC4000D6089C /* 5.mp3 in Resources */,
 				92D51FB21E2A2C8C00B5D3C6 /* Main.storyboard in Resources */,
 			);

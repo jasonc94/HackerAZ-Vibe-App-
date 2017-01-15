@@ -13,7 +13,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        logo.image  = UIImage(named:"logo.jpg")
+        logo.image  = UIImage(named:"logo.png")
         // Do any additional setup after loading the view, typically from a nib.
     }
 
