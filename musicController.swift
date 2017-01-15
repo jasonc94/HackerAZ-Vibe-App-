@@ -26,6 +26,7 @@ class musicController: UIViewController {
     
     
     override func viewDidLoad() {
+        votes.textColor=UIColor(red: 1, green: 0, blue: 0, alpha: 1)
         super.viewDidLoad()
         musicTitle.text = list[index!]["artist-song"]!
         musicImg.image = UIImage(named: list[index!]["coverImage"]!)
