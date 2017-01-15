@@ -135,6 +135,7 @@
 				BE6D00F31E2A457F00395759 /* ProfileViewController.swift */,
 				9201F7771E2AA70800143F75 /* musicLibraryView.swift */,
 				92AE567C1E2AF8C200B8EDEB /* musicController.swift */,
+				C8AFA15C1E2AFA2D0039BD18 /* PopularViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
