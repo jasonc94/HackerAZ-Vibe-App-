@@ -14,7 +14,7 @@ struct musicList{
                     "coverImage":"0",
                     "artist-song":"Mood - Love Is Real",
                     "location":"Ocean Ave - Cora's Coffee Shoppe",
-                    "upvotes":"165"],
+                    "upvotes"loca:"165"],
                     
                    ["index":"1",
                     "coverImage":"1",

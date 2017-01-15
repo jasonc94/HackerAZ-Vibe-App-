@@ -39,6 +39,8 @@
 		C8974CB81E2AEC4B00D6089C /* 7.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C8974CB71E2AEC4B00D6089C /* 7.mp3 */; };
 		C8974CBA1E2AEC5000D6089C /* 8.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C8974CB91E2AEC5000D6089C /* 8.mp3 */; };
 		C8974CBE1E2AEC5A00D6089C /* 10.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C8974CBD1E2AEC5A00D6089C /* 10.mp3 */; };
+		C8AFA15D1E2AFA2D0039BD18 /* PopularViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8AFA15C1E2AFA2D0039BD18 /* PopularViewController.swift */; };
+		C8AFA1611E2AFBC00039BD18 /* PopularCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8AFA1601E2AFBC00039BD18 /* PopularCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -76,6 +78,8 @@
 		C8974CB71E2AEC4B00D6089C /* 7.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 7.mp3; sourceTree = "<group>"; };
 		C8974CB91E2AEC5000D6089C /* 8.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 8.mp3; sourceTree = "<group>"; };
 		C8974CBD1E2AEC5A00D6089C /* 10.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 10.mp3; sourceTree = "<group>"; };
+		C8AFA15C1E2AFA2D0039BD18 /* PopularViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopularViewController.swift; sourceTree = "<group>"; };
+		C8AFA1601E2AFBC00039BD18 /* PopularCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopularCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +132,7 @@
 				BE8BF7FE1E2A2E3200BFF6BC /* MainPageViewController.swift */,
 				BE6D00F31E2A457F00395759 /* ProfileViewController.swift */,
 				9201F7771E2AA70800143F75 /* musicLibraryView.swift */,
+				C8AFA15C1E2AFA2D0039BD18 /* PopularViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -136,6 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				BE2508411E2AC35D0016EB3D /* profileMusicCell.swift */,
+				C8AFA1601E2AFBC00039BD18 /* PopularCell.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -281,6 +287,8 @@
 				9201F7781E2AA70800143F75 /* musicLibraryView.swift in Sources */,
 				BE2508421E2AC35D0016EB3D /* profileMusicCell.swift in Sources */,
 				BE6D00F41E2A457F00395759 /* ProfileViewController.swift in Sources */,
+				C8AFA1611E2AFBC00039BD18 /* PopularCell.swift in Sources */,
+				C8AFA15D1E2AFA2D0039BD18 /* PopularViewController.swift in Sources */,
 				BE8BF7FF1E2A2E3200BFF6BC /* MainPageViewController.swift in Sources */,
 				92D51FB51E2A2C8C00B5D3C6 /* HackerAZ2017.xcdatamodeld in Sources */,
 				92D51FAF1E2A2C8C00B5D3C6 /* ViewController.swift in Sources */,
