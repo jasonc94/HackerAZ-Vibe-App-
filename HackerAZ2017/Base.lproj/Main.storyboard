@@ -161,7 +161,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="QE1-Fp-Mcl" id="97i-zg-Clv">
-                                            <rect key="frame" x="0.0" y="0.0" width="342" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <color key="backgroundColor" red="0.57533715720487311" green="1" blue="0.55805026400850399" alpha="1" colorSpace="calibratedRGB"/>
                                         </tableViewCellContentView>
@@ -186,10 +186,10 @@
             </objects>
             <point key="canvasLocation" x="2240.8000000000002" y="185.75712143928038"/>
         </scene>
-        <!--View Controller-->
+        <!--Music Controller-->
         <scene sceneID="n9G-Hq-zHz">
             <objects>
-                <viewController id="unI-Ie-WNy" sceneMemberID="viewController">
+                <viewController id="unI-Ie-WNy" customClass="musicController" customModule="HackerAZ2017" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="iEU-Ky-WhL"/>
                         <viewControllerLayoutGuide type="bottom" id="X3j-F1-x2L"/>
@@ -224,9 +224,9 @@
                                 <state key="normal" title="play"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ImN-KA-enE">
-                                <rect key="frame" x="314" y="477" width="31" height="30"/>
+                                <rect key="frame" x="314" y="477" width="32" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="stop"/>
+                                <state key="normal" title="Vote"/>
                             </button>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fkD-no-gd8">
                                 <rect key="frame" x="20" y="524" width="51" height="31"/>
@@ -250,6 +250,17 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="loop" destination="hJF-dn-9lN" id="eAA-7Z-hHr"/>
+                        <outlet property="musicImg" destination="0oi-mk-Tkj" id="hMg-r5-HAi"/>
+                        <outlet property="musicProgress" destination="Jpu-Nr-Bq4" id="q9B-54-gAn"/>
+                        <outlet property="musicTitle" destination="hpT-xQ-mnc" id="Wtx-ZI-Zum"/>
+                        <outlet property="nextSong" destination="Bh1-Uc-J6z" id="r1c-O5-HgP"/>
+                        <outlet property="pause" destination="Fzs-mQ-alH" id="M10-PW-0Vw"/>
+                        <outlet property="play" destination="NXZ-Is-d0P" id="7gB-x4-YnZ"/>
+                        <outlet property="previous" destination="ylv-6L-Yxt" id="FLE-cP-MfH"/>
+                        <outlet property="votes" destination="ImN-KA-enE" id="MXj-f2-Qw5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g48-hc-99C" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
