@@ -6,7 +6,9 @@
 //  Copyright © 2017 Jason Cai. All rights reserved.
 //
 
+
 import UIKit
+import AVFoundation
 
 class musicController: UIViewController {
 
@@ -14,26 +16,105 @@ class musicController: UIViewController {
     @IBOutlet weak var musicTitle: UILabel!
     @IBOutlet weak var musicImg: UIImageView!
     @IBOutlet var musicProgress: UIView!
-    @IBOutlet weak var loop: UIButton!
-    @IBOutlet weak var play: UIButton!
     @IBOutlet weak var votes: UILabel!
-    @IBOutlet weak var previous: UIButton!
-    @IBOutlet weak var pause: UIButton!
-    @IBOutlet weak var nextSong: UIButton!
-    
-    var mTitle:String = ""
-    var mImg:String = ""
-    var mVotes:String = ""
 
+    
+
+    var index:Int?
+    var list = [Dictionary<String, String>]()
+    var audioPlayer:AVAudioPlayer!
+    
     
     override func viewDidLoad() {
+        votes.textColor=UIColor(red: 1, green: 0, blue: 0, alpha: 1)
         super.viewDidLoad()
-        musicTitle.text = mTitle
-        musicImg.image = UIImage(named: mImg)
-        //votes.text = mVotes
-
+        musicTitle.text = list[index!]["artist-song"]!
+        musicImg.image = UIImage(named: list[index!]["coverImage"]!)
+        votes.text = "Upvotes:" + list[index!]["upvotes"]!
+        let audioFilePath = Bundle.main.path(forResource: list[index!]["index"]!, ofType: "mp3")
+        
+        let audioFileUrl = NSURL.fileURL(withPath: audioFilePath!)
+        
+        audioPlayer = try! AVAudioPlayer(contentsOf: audioFileUrl)
+        audioPlayer.play()
         // Do any additional setup after loading the view.
     }
+
+    
+    @IBAction func playMusic(_ sender: UIButton) {
+        if(audioPlayer.isPlaying == false){
+            audioPlayer.play()
+        }
+        
+    }
+    
+    @IBAction func pause(_ sender: UIButton) {
+        if(audioPlayer.isPlaying == true){
+            audioPlayer.pause()
+        }
+    }
+    
+    @IBAction func nextSong(_ sender: UIButton) {
+        if(index!<list.count-1){
+            index! += 1
+            musicTitle.text = list[index!]["artist-song"]!
+            musicImg.image = UIImage(named: list[index!]["coverImage"]!)
+            votes.text = "Upvotes:" + list[index!]["upvotes"]!
+            let audioFilePath = Bundle.main.path(forResource: list[index!]["index"]!, ofType: "mp3")
+            
+            let audioFileUrl = NSURL.fileURL(withPath: audioFilePath!)
+            
+            audioPlayer = try! AVAudioPlayer(contentsOf: audioFileUrl)
+            audioPlayer.play()
+        }
+        else{
+            index = 0
+            musicTitle.text = list[index!]["artist-song"]!
+            musicImg.image = UIImage(named: list[index!]["coverImage"]!)
+            votes.text = "Upvotes:" + list[index!]["upvotes"]!
+            let audioFilePath = Bundle.main.path(forResource: list[index!]["index"]!, ofType: "mp3")
+            
+            let audioFileUrl = NSURL.fileURL(withPath: audioFilePath!)
+            
+            audioPlayer = try! AVAudioPlayer(contentsOf: audioFileUrl)
+            audioPlayer.play()
+        }
+    }
+    
+    @IBAction func previousSong(_ sender: UIButton) {
+        if(index!>1){
+            index! -= 1
+            musicTitle.text = list[index!]["artist-song"]!
+            musicImg.image = UIImage(named: list[index!]["coverImage"]!)
+            votes.text = "Upvotes:" + list[index!]["upvotes"]!
+            let audioFilePath = Bundle.main.path(forResource: list[index!]["index"]!, ofType: "mp3")
+            
+            let audioFileUrl = NSURL.fileURL(withPath: audioFilePath!)
+            
+            audioPlayer = try! AVAudioPlayer(contentsOf: audioFileUrl)
+            audioPlayer.play()
+        }
+        else{
+            index = list.count-1
+            musicTitle.text = list[index!]["artist-song"]!
+            musicImg.image = UIImage(named: list[index!]["coverImage"]!)
+            votes.text = "Upvotes:" + list[index!]["upvotes"]!
+            let audioFilePath = Bundle.main.path(forResource: list[index!]["index"]!, ofType: "mp3")
+            
+            let audioFileUrl = NSURL.fileURL(withPath: audioFilePath!)
+            
+            audioPlayer = try! AVAudioPlayer(contentsOf: audioFileUrl)
+            audioPlayer.play()
+        }
+    }
+    
+    @IBAction func Upvote(_ sender: UIButton) {
+        var temp:String = list[index!]["upvotes"]!
+        var number = Int(temp)
+        number!+=1
+        votes.text = "Upvotes:" + String(number!)
+    }
+   
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

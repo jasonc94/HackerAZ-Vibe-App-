@@ -24,12 +24,14 @@
 		92C47FE91E2B48C70088D700 /* 0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 92C47FDE1E2B48C70088D700 /* 0.jpg */; };
 		92C47FEB1E2B490D0088D700 /* 9.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 92C47FEA1E2B490D0088D700 /* 9.mp3 */; };
 		92C47FED1E2B49320088D700 /* 10.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 92C47FEC1E2B49320088D700 /* 10.mp3 */; };
+		92C47FF01E2B4FF90088D700 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92C47FEF1E2B4FF90088D700 /* AVFoundation.framework */; };
 		92D51FAD1E2A2C8C00B5D3C6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D51FAC1E2A2C8C00B5D3C6 /* AppDelegate.swift */; };
 		92D51FAF1E2A2C8C00B5D3C6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D51FAE1E2A2C8C00B5D3C6 /* ViewController.swift */; };
 		92D51FB21E2A2C8C00B5D3C6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92D51FB01E2A2C8C00B5D3C6 /* Main.storyboard */; };
 		92D51FB51E2A2C8C00B5D3C6 /* HackerAZ2017.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 92D51FB31E2A2C8C00B5D3C6 /* HackerAZ2017.xcdatamodeld */; };
 		92D51FB71E2A2C8C00B5D3C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92D51FB61E2A2C8C00B5D3C6 /* Assets.xcassets */; };
 		92D51FBA1E2A2C8C00B5D3C6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92D51FB81E2A2C8C00B5D3C6 /* LaunchScreen.storyboard */; };
+		92E94DDF1E2B6816002FFC51 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 92E94DDE1E2B6816002FFC51 /* logo.png */; };
 		BE2508421E2AC35D0016EB3D /* profileMusicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2508411E2AC35D0016EB3D /* profileMusicCell.swift */; };
 		BE6885841E2B5C5700BF37DD /* profilePic.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BE6885831E2B5C5700BF37DD /* profilePic.jpg */; };
 		BE6885861E2B658C00BF37DD /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = BE6885851E2B658C00BF37DD /* logo.png */; };
@@ -70,6 +72,7 @@
 		92C47FDE1E2B48C70088D700 /* 0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 0.jpg; sourceTree = "<group>"; };
 		92C47FEA1E2B490D0088D700 /* 9.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 9.mp3; sourceTree = "<group>"; };
 		92C47FEC1E2B49320088D700 /* 10.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 10.mp3; sourceTree = "<group>"; };
+		92C47FEF1E2B4FF90088D700 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		92D51FA91E2A2C8C00B5D3C6 /* HackerAZ2017.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HackerAZ2017.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92D51FAC1E2A2C8C00B5D3C6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		92D51FAE1E2A2C8C00B5D3C6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = HackerAZ2017/ViewController.swift; sourceTree = "<group>"; };
@@ -78,6 +81,7 @@
 		92D51FB61E2A2C8C00B5D3C6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		92D51FB91E2A2C8C00B5D3C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		92D51FBB1E2A2C8C00B5D3C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		92E94DDE1E2B6816002FFC51 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		BE2508411E2AC35D0016EB3D /* profileMusicCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = profileMusicCell.swift; sourceTree = "<group>"; };
 		BE6885831E2B5C5700BF37DD /* profilePic.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = profilePic.jpg; sourceTree = "<group>"; };
 		BE6885851E2B658C00BF37DD /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo.png; path = ../../Downloads/logo.png; sourceTree = "<group>"; };
@@ -105,12 +109,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92C47FF01E2B4FF90088D700 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		92C47FEE1E2B4FF80088D700 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				92C47FEF1E2B4FF90088D700 /* AVFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		92D51FA01E2A2C8C00B5D3C6 = {
 			isa = PBXGroup;
 			children = (
@@ -118,6 +131,7 @@
 				92D51FC11E2A2CAC00B5D3C6 /* ViewControllers */,
 				92D51FAB1E2A2C8C00B5D3C6 /* HackerAZ2017 */,
 				92D51FAA1E2A2C8C00B5D3C6 /* Products */,
+				92C47FEE1E2B4FF80088D700 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -153,7 +167,6 @@
 				92AE567C1E2AF8C200B8EDEB /* musicController.swift */,
 				C8AFA15C1E2AFA2D0039BD18 /* PopularViewController.swift */,
 				92C47FD01E2B42BE0088D700 /* RecentViewController.swift */,
-				BE6885851E2B658C00BF37DD /* logo.png */,
 				BE6885831E2B5C5700BF37DD /* profilePic.jpg */,
 				BE6885891E2B737E00BF37DD /* dropButton.jpg */,
 				BE68858B1E2B75B200BF37DD /* popularIcon.png */,
@@ -279,7 +292,7 @@
 			files = (
 				92C47FED1E2B49320088D700 /* 10.mp3 in Resources */,
 				92C47FE71E2B48C70088D700 /* 2.jpg in Resources */,
-				BE6885861E2B658C00BF37DD /* logo.png in Resources */,
+				92E94DDF1E2B6816002FFC51 /* logo.png in Resources */,
 				92C47FE31E2B48C70088D700 /* 6.jpg in Resources */,
 				92C47FE01E2B48C70088D700 /* 3.jpg in Resources */,
 				BE6885901E2B771800BF37DD /* RecentIcon.png in Resources */,
