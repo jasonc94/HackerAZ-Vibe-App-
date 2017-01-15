@@ -9,9 +9,11 @@
 import UIKit
 
 class ViewController: UIViewController {
+    @IBOutlet weak var logo: UIImageView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        logo.image  = UIImage(named:"logo.jpg")
         // Do any additional setup after loading the view, typically from a nib.
     }
 
