@@ -30,7 +30,7 @@ class musicController: UIViewController {
         super.viewDidLoad()
         musicTitle.text = mTitle
         musicImg.image = UIImage(named: mImg)
-        //votes.text = mVotes
+        votes.text = "Upvotes:" + mVotes
 
         // Do any additional setup after loading the view.
     }
