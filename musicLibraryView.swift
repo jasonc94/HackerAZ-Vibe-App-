@@ -38,9 +38,9 @@ class musicLibraryView: UIViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "musicCell", for: indexPath)
         
         cell.textLabel?.text = musicData.dropLibrary[indexPath.row]["artist-song"]!
-        //let cell_Image = UIImage(named: "tom.jpg")
-        //cell.imageView?.image = cell_Image
         
+        let cell_Image = UIImage(named: musicData.dropLibrary[indexPath.row]["coverImage"]!)
+        cell.imageView?.image = cell_Image
         return cell;
     }
     

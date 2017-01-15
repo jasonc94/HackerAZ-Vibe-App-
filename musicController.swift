@@ -29,6 +29,7 @@ class musicController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         musicTitle.text = mTitle
+        musicImg.image = UIImage(named: mImg)
         //votes.text = mVotes
 
         // Do any additional setup after loading the view.
