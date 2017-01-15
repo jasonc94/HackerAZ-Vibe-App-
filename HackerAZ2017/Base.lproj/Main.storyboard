@@ -358,6 +358,14 @@
                                     <action selector="nextSong:" destination="unI-Ie-WNy" eventType="touchUpInside" id="1Od-qI-xa1"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mk7-7t-UBZ">
+                                <rect key="frame" x="268" y="460" width="73" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Upvote"/>
+                                <connections>
+                                    <action selector="Upvote:" destination="unI-Ie-WNy" eventType="touchUpInside" id="wAd-I4-W5n"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>

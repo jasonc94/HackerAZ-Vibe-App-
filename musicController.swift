@@ -108,6 +108,13 @@ class musicController: UIViewController {
         }
     }
     
+    @IBAction func Upvote(_ sender: UIButton) {
+        var temp:String = list[index!]["upvotes"]!
+        var number = Int(temp)
+        number!+=1
+        votes.text = "Upvotes:" + String(number!)
+    }
+   
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
