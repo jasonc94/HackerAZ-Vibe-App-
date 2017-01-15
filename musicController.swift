@@ -10,18 +10,26 @@ import UIKit
 
 class musicController: UIViewController {
 
-    @IBOutlet weak var musicTitle: UITextField!
+  
+    @IBOutlet weak var musicTitle: UILabel!
     @IBOutlet weak var musicImg: UIImageView!
     @IBOutlet var musicProgress: UIView!
     @IBOutlet weak var loop: UIButton!
     @IBOutlet weak var play: UIButton!
-    @IBOutlet weak var votes: UIButton!
+    @IBOutlet weak var votes: UILabel!
     @IBOutlet weak var previous: UIButton!
     @IBOutlet weak var pause: UIButton!
     @IBOutlet weak var nextSong: UIButton!
     
+    var mTitle:String = ""
+    var mImg:String = ""
+    var mVotes:String = ""
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        musicTitle.text = mTitle
+        //votes.text = mVotes
 
         // Do any additional setup after loading the view.
     }

@@ -166,7 +166,7 @@
                                             <color key="backgroundColor" red="0.57533715720487311" green="1" blue="0.55805026400850399" alpha="1" colorSpace="calibratedRGB"/>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="unI-Ie-WNy" kind="show" id="LNf-5a-3G8"/>
+                                            <segue destination="unI-Ie-WNy" kind="show" identifier="musicControl" id="LNf-5a-3G8"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -198,13 +198,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="title" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hpT-xQ-mnc">
-                                <rect key="frame" x="59" y="97" width="256" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0oi-mk-Tkj">
                                 <rect key="frame" x="23" y="156" width="329" height="271"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -222,11 +215,6 @@
                                 <rect key="frame" x="172" y="477" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="play"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ImN-KA-enE">
-                                <rect key="frame" x="314" y="477" width="32" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Vote"/>
                             </button>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fkD-no-gd8">
                                 <rect key="frame" x="20" y="524" width="51" height="31"/>
@@ -247,6 +235,20 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="pause"/>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Votes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KjJ-IW-BMs">
+                                <rect key="frame" x="295" y="486" width="44" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dYW-es-RG6">
+                                <rect key="frame" x="60" y="101" width="255" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -254,12 +256,12 @@
                         <outlet property="loop" destination="hJF-dn-9lN" id="eAA-7Z-hHr"/>
                         <outlet property="musicImg" destination="0oi-mk-Tkj" id="hMg-r5-HAi"/>
                         <outlet property="musicProgress" destination="Jpu-Nr-Bq4" id="q9B-54-gAn"/>
-                        <outlet property="musicTitle" destination="hpT-xQ-mnc" id="Wtx-ZI-Zum"/>
+                        <outlet property="musicTitle" destination="dYW-es-RG6" id="Egi-8t-Uk8"/>
                         <outlet property="nextSong" destination="Bh1-Uc-J6z" id="r1c-O5-HgP"/>
                         <outlet property="pause" destination="Fzs-mQ-alH" id="M10-PW-0Vw"/>
                         <outlet property="play" destination="NXZ-Is-d0P" id="7gB-x4-YnZ"/>
                         <outlet property="previous" destination="ylv-6L-Yxt" id="FLE-cP-MfH"/>
-                        <outlet property="votes" destination="ImN-KA-enE" id="MXj-f2-Qw5"/>
+                        <outlet property="votes" destination="KjJ-IW-BMs" id="UdV-hb-Cbu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g48-hc-99C" userLabel="First Responder" sceneMemberID="firstResponder"/>
