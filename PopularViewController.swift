@@ -45,6 +45,19 @@ class PopularViewController: UIViewController, UITableViewDataSource, UITableVie
         
         return cell
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let selectedIndex: IndexPath = self.tableView.indexPath(for: sender as! UITableViewCell)!
+        if(segue.identifier == "toMusicControl"){
+            if let details : musicController = segue.destination as? musicController {
+                //set the music name
+                details.mTitle = musics.topLibrary[selectedIndex.row]["artist-song"]!
+                //set the selected place image
+                details.mImg = musics.topLibrary[selectedIndex.row]["coverImage"]!
+                details.mVotes = musics.topLibrary[selectedIndex.row]["upvotes"]!
+            }
+        }
+    }
 
     /*
     // MARK: - Navigation

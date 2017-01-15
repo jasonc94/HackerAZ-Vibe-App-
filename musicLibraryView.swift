@@ -44,18 +44,7 @@ class musicLibraryView: UIViewController {
         return cell;
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let selectedIndex: IndexPath = self.musicLibrary.indexPath(for: sender as! UITableViewCell)!
-        if(segue.identifier == "musicControl"){
-            if let details : musicController = segue.destination as? musicController {
-                //set the music name
-                details.mTitle = musicData.dropLibrary[selectedIndex.row]["artist-song"]!
-                //set the selected place image
-                details.mImg = musicData.dropLibrary[selectedIndex.row]["coverImage"]!
-                //details.mVotes = musicData.dropLibrary[selectedIndex.row]["upVotes"]!
-            }
-        }
-    }
+ 
 
 
     
