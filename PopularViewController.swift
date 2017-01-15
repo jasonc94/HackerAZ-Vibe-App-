@@ -41,8 +41,8 @@ class PopularViewController: UIViewController, UITableViewDataSource, UITableVie
         cell.song.text = musics.topLibrary[indexPath.row]["artist-song"]!
         cell.location.text = musics.topLibrary[indexPath.row]["location"]!
         cell.upvotes.text = musics.topLibrary[indexPath.row]["upvotes"]!
-    
-        
+        let cell_Image = UIImage(named: musics.topLibrary[indexPath.row]["coverImage"]!)
+        cell.imageView?.image = cell_Image
         return cell
     }
     

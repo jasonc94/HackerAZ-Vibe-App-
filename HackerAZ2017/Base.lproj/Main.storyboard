@@ -192,7 +192,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nOy-Zn-7QO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2260" y="125"/>
+            <point key="canvasLocation" x="2474" y="125"/>
         </scene>
         <!--Music Controller-->
         <scene sceneID="n9G-Hq-zHz">
@@ -492,6 +492,6 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="YXP-yf-brv"/>
-        <segue reference="dWJ-TO-x9s"/>
+        <segue reference="xPd-M2-DS1"/>
     </inferredMetricsTieBreakers>
 </document>
